@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
+
+/* -----------------------------------
+    01. General CSS
+-------------------------------------*/
+html,
+body {
+  font-size: 15px;
+  color: #505050;
+  font-family: 'Rubik', sans-serif;
+  vertical-align: baseline;
+  line-height: 26px;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0 0 26px;
+  line-height: 1.8;
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  color: #111111;
+  margin: 0 0 26px;
+  line-height: 1.2;
+}
+
+h2 {
+  color: #112958;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+
+a {
+  color: #21a7d0;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  outline: none !important;
+}
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0 none;
+  color: #21a7d0;
+}
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+vertical-align: middle;
+line-height: 90px; 
+}
+.card {
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+      }

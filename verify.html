@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    
+
+<head> 
+        <!-- meta tag -->
+        <meta charset="utf-8">
+        <title>Apply for Personal Loan</title>
+        
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+   
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+
+    <body >
+        
+    
+            <header >
+                
+
+
+            </header>
+
+		<!-- Main content Start -->
+
+    		<!-- Personal Loan Part -->
+            
+                        <div class="text-center">
+                            <h2 class="">Apply for Personal Loan</h2>
+
+                        <!-- Personal Loan start -->
+
+<!-- City Form -->
+    <label for="city">Select Your City:</label>
+    <select id="city" name="city" required>
+    <option value="Ahmadnagar">Ahmadnagar</option>
+    <option value="Akola">Akola</option>
+    <option value="Amravati">Amravati</option>
+    <option value="Aurangabad">Aurangabad</option>
+    <option value="Bhandara">Bhandara</option>
+    <option value="Bhusawal">Bhusawal</option>
+    <option value="Bid">Bid</option>
+    <option value="Buldana">Buldana</option>
+    <option value="Chandrapur">Chandrapur</option>
+    <option value="Daulatabad">Daulatabad</option>
+    <option value="Dhule">Dhule</option>
+    <option value="Jalgaon">Jalgaon</option>
+    <option value="Kalyan">Kalyan</option>
+    <option value="Karli">Karli</option>
+    <option value="Kolhapur">Kolhapur</option>
+    <option value="Mahabaleshwar">Mahabaleshwar</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Nagpur">Nagpur</option>
+    <option value="Nashik">Nashik</option>
+    <option value="Pune">Pune</option>
+    <option value="Ratnagiri">Ratnagiri</option>
+    <option value="Satara">Satara</option>
+    <option value="Thane">Thane</option>
+    <option value="Wardha">Wardha</option>
+    <option value="Solapur">Solapur</option>
+    <option value="Pandharpur">Pandharpur</option>
+  </select>
+<br>
+<!-- PAN Form -->
+  <label>Enter PAN Number</label>
+<input type="text" ng-model="abc" ng-pattern="panCardRegex" required>
+
+<br>
+<!-- Name Form -->
+<label for="fullname">Enter Full Name:</label>
+<input type="text" id="fullname" name="fullname" maxlength="225" required>
+<br>
+
+
+
+<!-- Email Form -->
+            <form>
+  <label>Enter an email address:</label>
+  <input id='email'>  
+
+</form>
+<br>
+<label for="phonenumber">Enter Phone No.:</label>
+<input value="+91" maxlength="3" size="1">
+<input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{3}-[0-9]{2}-[0-9]{5}" maxlength="10" required><br>
+
+
+<button type='submit' id='validate' value="Test">Get OTP</button>
+<br>
+<!-- OTP Button -->
+<form>
+  <input id="one-time-code" required>
+  <input type="submit" >
+</form>
+<!-- Success Page -->
+<div class="card">
+      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+        <i class="checkmark">✓</i>
+      </div>
+        <h1>Success</h1> 
+        
+      </div>
+
+
+</div>
+            <!-- Personal Loan end --> 
+
+ 
+
+
+        <!-- Footer Start -->
+        <footer>
+                    
+            
+                <div class="text-center">                    
+                    
+                        <div class="col-lg-6 md-mb-20">
+                            
+                                <p>&copy;  Developed By <a href="https://www.instagram.com/vishucmath">Vishwanath Charantimath</a></p>
+                            
+                        </div>
+                        
+                    
+                </div>
+            
+        </footer>
+        <!-- Footer End -->
+
+        
+        
+
+        <!-- email js -->
+        <script src="email.js"></script>
+         <!-- pan card js -->
+        <script src="pancard.js"></script>
+        <!-- phone number js -->
+        <script src="phonenumber.js"></script>
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <!-- otp js -->
+        <script src="otp.js"></script>
+        <!-- 3 times disabled button -->
+    <script>
+       $(function(){
+      var count = 3,
+          $btn = $('input[type="submit"]'); 
+          $btn.val($btn.val()+' ('+count+')')
+          
+      $btn.click(function(){
+          $btn.val($btn.val().replace(count,count-1));
+          count--;
+          if(count==0) {
+                return !$btn.attr('disabled','disabled');
+          }
+      })
+    })
+    </script>
+    </body>
+
+</html>
